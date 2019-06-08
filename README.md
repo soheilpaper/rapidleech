@@ -20,3 +20,22 @@ For end-users, you may search on our forum for readily available installed scrip
 ## Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+##  Or do this:
+#!/bin/bash 
+sudo curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+heroku login 
+#another mthod
+
+#git clone https://github.com/Th3-822/rapidleech
+git clone https://github.com/elasa-Sites/heroku-rapidleech
+cd h*
+sudo git init
+sudo git add .
+ sudo git add -f */*/*
+sudo git commit -m "initial commit"
+
+sudo heroku create --buildpack https://github.com/heroku/heroku-buildpack-php --region eu
+
+`sudo git push heroku master`
+
